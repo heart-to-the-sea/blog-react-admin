@@ -1,0 +1,41 @@
+.custom-block {
+  width: 100%;
+  border-radius: 5px;
+  padding: 5px 15px;
+  margin: 15px 0;
+  cursor: pointer;
+  font-size: 18px;
+}
+.custom-block p {
+  padding-left: 15px;
+}
+.custom-block .custom-block-title {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 18px;
+  padding: 4px 0 5px;
+}
+.tip {
+  border-left: 5px solid #00c496;
+  background-color: #3deabb53;
+  color: #01844d;
+}
+.tip .custom-block-title {
+  color: #029586;
+}
+.warning {
+  border-left: 5px solid #c4a000;
+  background-color: #e1c75142;
+  color: #89720a;
+}
+.warning .custom-block-title {
+  color: #5d4d09;
+}
+.danger {
+  border-left: 5px solid #c4001a;
+  background-color: #e13b5142;
+  color: #740313;
+}
+.danger .custom-block-title {
+  color: #c4001a;
+}

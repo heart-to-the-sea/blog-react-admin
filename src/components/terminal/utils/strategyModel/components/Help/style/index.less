@@ -1,0 +1,25 @@
+.terminal-help-node {
+  width: 700px;
+  padding-left: 50px;
+  display: flex;
+  justify-content: flex-start;
+  .left {
+    width: 50px;
+    position: relative;
+    &::after {
+      position: absolute;
+      top: 0;
+      right: 10px;
+      bottom: 0;
+      margin: auto;
+      content: ":";
+    }
+  }
+  .right{
+    margin-left: 15px;
+    border-radius: 0;
+    background-color: transparent;
+    border: none;
+    color: #a1ff27;
+  }
+}

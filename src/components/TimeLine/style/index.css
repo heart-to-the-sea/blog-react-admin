@@ -1,0 +1,109 @@
+.blog-time-line-node {
+  display: flex;
+  user-select: none;
+  position: relative;
+  padding: 5px 0;
+}
+.blog-time-line {
+  width: 180px;
+  top: 0;
+  height: 100%;
+  position: absolute;
+  left: -180px;
+  background-color: rgba(250, 235, 215, 0);
+}
+.blog-time-line::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  height: 2px;
+  margin: auto;
+  background-color: rgba(109, 109, 109, 0.267);
+}
+.blog-time-line::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  margin: auto;
+  background-color: rgba(109, 109, 109, 0.267);
+}
+.blog-time-line .blog-time-line-item {
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 80px;
+  height: 30px;
+  border-radius: 60px;
+  text-align: center;
+  background-color: #00c4c4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 16px;
+}
+.blog-time-line-node:first-of-type .blog-time-line::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 2px;
+  height: 50%;
+  margin: auto;
+  background-color: rgba(109, 109, 109, 0.267);
+}
+.blog-time-line-node:last-of-type .blog-time-line::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 2px;
+  height: 50%;
+  margin: auto;
+  background-color: rgba(109, 109, 109, 0.267);
+}
+/* 入场动画过程 */
+.dg-enter {
+  transform: translateX(200px);
+}
+.dg-enter-active {
+  transition: 2s;
+  transform: translateX(0px);
+}
+.dg-enter-done {
+  transform: translateX(0px);
+}
+/* 出场动画过程 */
+.dg-exit {
+  transform: translateX(0px);
+}
+.dg-exit-active {
+  transition: 2s;
+  transform: translateX(200px);
+}
+.dg-exit-done {
+  transform: translateX(200px);
+}
+.home,
+.user,
+.login,
+.animate {
+  position: absolute;
+  left: calc(50% - 200px);
+}

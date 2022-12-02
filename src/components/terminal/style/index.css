@@ -1,0 +1,86 @@
+.terminal-box {
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  top: 0px;
+  z-index: 999999;
+  border: 2px solid #747474;
+  color: #70ff1e;
+  border-radius: 3px;
+  background-color: #333333;
+}
+.terminal-box .terminal-box-content {
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  position: relative;
+  overflow-y: scroll;
+}
+.terminal-box .terminal-box-content .terminal-index-bkg {
+  width: 100%;
+  height: 500px;
+  background-image: url("../../../../public/bkg3.jpg");
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  background-size: 100%;
+  background-position: center center;
+  filter: grayscale(1);
+}
+.terminal-box .terminal-box-content .terminal-index-content {
+  width: 1200px;
+  height: 500px;
+  margin: auto;
+  padding-top: 20px;
+  text-align: center;
+  z-index: 1;
+}
+.terminal-box .terminal-box-content .terminal-index-content .terminal-index-box {
+  display: flex;
+  justify-content: space-around;
+}
+.terminal-box .terminal-box-content .terminal-index-content img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.terminal-box .terminal-box-content .terminal-list {
+  width: 100%;
+  max-height: 60vh;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+}
+.terminal-box .terminal-box-content .terminal-list .terminal-list-node {
+  max-width: 500px;
+  min-height: 20px;
+  border: 1px solid transparent;
+  padding: 3px;
+}
+.terminal-box .terminal-box-content .terminal-list .terminal-list-node:hover {
+  border: 1px dashed #6af817;
+  cursor: pointer;
+}
+.terminal-box .terminal-box-content .terminal-list .terminal-list-node .terminal-list-title {
+  position: relative;
+  min-height: 20px;
+  max-height: 46px;
+  padding-left: 60px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.terminal-box .terminal-box-content .terminal-list .terminal-list-node .terminal-list-title .left-index {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+}
+.terminal-box .terminal-box-content::-webkit-scrollbar {
+  width: 0;
+}

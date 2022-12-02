@@ -1,0 +1,59 @@
+.directory {
+  position: sticky;
+  margin-left: -200px;
+  width: 200px;
+  max-height: calc(100vh - 50px);
+  top: 60px;
+  left: 55px;
+  background-color: #ffffff;
+  padding: 15px;
+  padding-right: 0;
+  border-radius: 5px;
+  border: 1px solid #33333333;
+  overflow-y: auto;
+}
+.directory::-webkit-scrollbar {
+  width: 0;
+}
+.directory p {
+  padding: 5px 10px;
+  position: relative;
+  user-select: none;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+.directory p::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 2px;
+  margin: auto;
+  width: 4px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #00c4c4;
+}
+.directory p::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 15px;
+  right: 16px;
+  height: 1px;
+  background-color: #b1b1b133;
+}
+.directory:first-child {
+  padding-left: 0px;
+}
+.directory ul {
+  list-style: none;
+  padding-left: 15px;
+}
+.directory ul li::marker {
+  width: 0;
+}
+.directory ul li p.list-active {
+  background-color: #00c4c4;
+  color: #ffffff;
+}

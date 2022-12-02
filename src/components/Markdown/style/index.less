@@ -1,0 +1,89 @@
+@import url("./markdown.less");
+.markdown {
+  display: flex;
+  border: none;
+  height: calc(100vh - 0px);
+  .eidtor {
+    width: 50%;
+    outline: none;
+    resize: none;
+    border: none;
+  }
+  
+  .preview {
+    height: 100vh;
+    overflow-y: scroll;
+    padding: 15px 20px;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      word-break: break-all;
+      cursor: pointer;
+      margin: 15px 0;
+      padding: 5px 15px;
+      transform: scale(1);
+      transition: 0.3s;
+      user-select: none;
+      border-radius: 3px;
+      border-bottom: 1px solid #c4c4c47a;
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 5px;
+        height: 100%;
+        border-radius: 2px;
+        background-color: #00c4c4;
+      }
+      &:hover {
+        transform: scale(1.03);
+      }
+    }
+    hr {
+      background-color: #c4c4c47a;
+      margin: 25px 0;
+    }
+    ol,
+    ul {
+      padding: 5px 0;
+      padding-left: 30px;
+      li {
+        padding: 10px 1px 0;
+        padding-left: 0px;
+        font-family: sans-serif;
+        position: relative;
+        &::marker {
+          font-size: 16px;
+          font-weight: 600;
+          unicode-bidi: isolate;
+          font-variant-numeric: tabular-nums;
+          text-transform: none;
+          text-indent: 0px !important;
+          text-align: start !important;
+          text-align-last: start !important;
+        }
+      }
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th,
+    tr,
+    td {
+      padding: 10px;
+      border: 1px solid #c0c0c0a1;
+      min-width: 33%;
+    }
+    tr:nth-child(2n) {
+      background-color: #6cb6c42c;
+    }
+  }
+  .preview::-webkit-scrollbar{
+    width: 2px;
+  }
+}

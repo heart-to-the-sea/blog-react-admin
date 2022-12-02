@@ -1,0 +1,98 @@
+.hljs::-webkit-scrollbar {
+  width: 5px;
+}
+.hljs::-webkit-scrollbar-button {
+  width: 5px;
+  background-color: rebeccapurple;
+}
+pre code.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 1em;
+  font-size: 16px;
+}
+.function_ {
+  color: #f08d49;
+}
+.class_ {
+  color: #5be1cd;
+}
+.hljs-property {
+  color: #99d2ed;
+}
+pre.hljs {
+  padding: 12px 2px 12px 40px !important;
+  border-radius: 5px !important;
+  position: relative;
+  font-size: 14px !important;
+  line-height: 22px !important;
+}
+pre.hljs code {
+  display: block !important;
+  margin: 0 10px !important;
+  overflow-x: auto !important;
+}
+pre.hljs code::-webkit-scrollbar {
+  z-index: 11;
+  width: 6px;
+}
+pre.hljs code::-webkit-scrollbar:horizontal {
+  height: 6px;
+}
+pre.hljs code::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  width: 6px;
+  background: #666;
+}
+pre.hljs code::-webkit-scrollbar-corner,
+pre.hljs code::-webkit-scrollbar-track {
+  background: #1e1e1e;
+}
+pre.hljs code::-webkit-scrollbar-track-piece {
+  background: #1e1e1e;
+  width: 6px;
+}
+pre.hljs .line-numbers-rows {
+  position: absolute;
+  pointer-events: none;
+  top: 12px;
+  bottom: 12px;
+  left: 0;
+  font-size: 100%;
+  width: 40px;
+  text-align: center;
+  letter-spacing: -1px;
+  border-right: 1px solid rgba(0, 0, 0, 0.66);
+  user-select: none;
+  counter-reset: linenumber;
+}
+pre.hljs .line-numbers-rows span {
+  pointer-events: none;
+  display: block;
+  counter-increment: linenumber;
+}
+pre.hljs .line-numbers-rows span:before {
+  content: counter(linenumber);
+  color: #999;
+  display: block;
+  text-align: center;
+}
+pre.hljs b.name {
+  position: absolute;
+  top: 2px;
+  right: 50px;
+  z-index: 10;
+  color: #999;
+  pointer-events: none;
+}
+pre.hljs .copy-btn {
+  position: absolute;
+  top: 2px;
+  right: 4px;
+  z-index: 10;
+  color: #333;
+  cursor: pointer;
+  background-color: #fff;
+  border: 0;
+  border-radius: 2px;
+}

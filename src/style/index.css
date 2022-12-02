@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+  outline: none;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui !important;
+}
+:root,
+:host {
+  --w-e-textarea-bg-color: #fff;
+  --w-e-textarea-color: #3c095e;
+  --w-e-textarea-border-color: #ccc;
+  --w-e-textarea-slight-border-color: #e8e8e8;
+  --w-e-textarea-slight-color: #ffffff;
+  --w-e-textarea-slight-bg-color: #eb620875;
+  --w-e-textarea-selected-border-color: #217df7;
+  --w-e-textarea-handler-bg-color: #4290f7;
+  --w-e-toolbar-color: #030303;
+  --w-e-toolbar-bg-color: #ffffff;
+  --w-e-toolbar-active-color: #fd0606;
+  --w-e-toolbar-active-bg-color: #f1f1f1;
+  --w-e-toolbar-disabled-color: #999;
+  --w-e-toolbar-border-color: #e8e8e8;
+  --w-e-modal-button-bg-color: #fafafa;
+  --w-e-modal-button-border-color: #d9d9d9;
+}
+.mark {
+  color: #00c4c4;
+}
+.jump-mark {
+  color: #fff !important;
+  background-color: #00c4c4;
+}
+.jump-mark .mark {
+  color: #fff !important;
+}

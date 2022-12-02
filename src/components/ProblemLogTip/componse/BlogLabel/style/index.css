@@ -1,0 +1,11 @@
+.blog-label {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-bottom: 16px;
+}
+.blog-label .label-left {
+  min-width: 100px;
+}
+.blog-label .label-right {
+  width: 100%;
+}

@@ -1,0 +1,65 @@
+
+@import url("./code.less");
+@import url("./markdown-container.less");
+@import url("./pseudocode.less");
+.hljs {
+  border-radius: 5px;
+  padding: 15px 20px;
+  // line-height: 20px;
+  font-size: 14px;
+  background: #1e1e1e;
+  color: #dcdcdc;
+  word-break: break-all;
+  font-weight: 600;
+  max-height: 500px;
+  overflow-y: auto;
+  code {
+    font-size: 16px;
+    overflow-y: auto;
+    font-family: inherit !important;
+  }
+  margin: 15px 0; 
+  
+}
+p {
+  font-size: 14px;
+  padding: 2px 0;
+  padding-left: 15px;
+  code {
+    color: rgb(228, 147, 40);
+    border-radius: 3px;
+    padding: 2px 10px;
+    background-color: #d5d5d562;
+  }
+}
+blockquote{
+  border-left: 3px solid rgba(16, 243, 39, 0.531);
+  padding: 5px 15px;
+  min-height: 23px;
+}
+
+
+.preview {
+  background: rgb(255, 255, 255) ;
+  // background-image:
+  //     linear-gradient(rgba(56, 110, 109, 0.11) 1px, transparent 0),
+  //     linear-gradient(90deg, rgba(56, 110, 109, 0.11)  1px, transparent 0),
+  //     linear-gradient(rgba(56, 110, 109, 0.11)   1px, transparent 0),
+  //     linear-gradient(90deg, rgba(56, 110, 109, 0.11)   1px, transparent 0);
+  // background-size: 15px 15px, 15px 15px, 75px 75px, 75px 75px;
+  img {margin: auto;
+    width: 90%;
+    display: block;
+  }
+}
+pre{
+  border-radius: 5px;
+  padding: 5px 15px;
+  color: rgb(65, 65, 46);
+  word-break: break-all;
+  border: 1px solid rgba(156, 156, 156, 0.222);
+  background-color: #ffffff4b;
+  code {
+    word-break: break-all;
+  }
+}

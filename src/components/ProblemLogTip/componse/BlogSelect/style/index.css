@@ -1,0 +1,74 @@
+.blog-select-box {
+  position: relative;
+}
+.blog-select-box .blog-select {
+  outline: none;
+  border: 1px solid #cfcfcf;
+  height: 40px;
+  border-radius: 5px;
+  padding: 5px 15px;
+  color: #9c9c9c;
+}
+.blog-select-box .blog-select:focus {
+  border: 1px solid #00c4c4;
+}
+.blog-select-box .select-option-box {
+  position: absolute;
+  min-width: 240px;
+  z-index: 999;
+  top: 50px;
+  height: 0;
+  overflow: hidden;
+  border-radius: 5px;
+  background-color: #fff;
+  border: 1px solid transparent;
+  transition: all 0.3s;
+}
+.blog-select-box .select-option-box-visible {
+  border: 1px solid #00c4c4;
+  height: 300px;
+}
+.blog-select-box .select-option {
+  float: left;
+  min-width: 240px;
+}
+.blog-select-box .select-option .select-option-node {
+  width: 100%;
+  height: 30px;
+  color: #00c4c4;
+  line-height: 20px;
+  padding: 5px 15px;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+}
+.blog-select-box .select-option .select-option-node::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  right: 15px;
+  height: 1px;
+  background-color: #00c4c4;
+}
+.blog-select-box .select-option .select-option-node:last-of-type::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0px;
+  background-color: #ffffff;
+}
+.blog-select-box .select-option .select-option-node:hover {
+  color: #fff;
+  background-color: #00c4c491;
+}
+.blog-select-box .select-option .select-option-node-path {
+  color: #fff;
+  background-color: #00c4c491;
+}
+.blog-select-box .select-option .select-option-node-active {
+  color: #fff;
+  background-color: #00c4c4;
+}

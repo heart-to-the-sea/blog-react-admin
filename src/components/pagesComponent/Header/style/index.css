@@ -1,0 +1,33 @@
+.header {
+  width: 100%;
+  height: 40px;
+  position: fixed;
+  border-bottom: 1px solid #00c4c4;
+  top: 0;
+  z-index: 9999999999999;
+  background-color: #fff;
+}
+.header .header-back {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  filter: blur(1px);
+  background-color: #00c4c4;
+}
+.header .header-back-shadow {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 80%;
+  box-shadow: 0 0 50px #cacaca4d;
+}
+.header .header-content {
+  width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  position: relative;
+}

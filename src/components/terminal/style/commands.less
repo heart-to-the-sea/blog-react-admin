@@ -1,0 +1,41 @@
+@import url("./terminal-index.less");
+.terminal-list {
+  width: 100%;
+  // max-height: 60vh;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  .terminal-list-node {
+    max-width: 500px;
+    min-height: 20px;
+    max-height: 60px;
+    border: 1px solid transparent;
+    padding: 3px;
+    &:hover {
+      border: 1px dashed #6af817;
+      cursor: pointer;
+    }
+    .terminal-list-title {
+      width: 480px;
+      position: relative;
+      min-height: 20px;
+      max-height: 60px;
+      padding-left: 80px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      .terminal-list-title-mark {
+        color: red;
+      }
+      .left-index {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+      }
+    }
+  }
+}

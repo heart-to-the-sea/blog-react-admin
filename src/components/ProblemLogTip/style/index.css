@@ -1,0 +1,109 @@
+.problem-tip-log {
+  position: fixed;
+  width: 500px;
+  top: 40px;
+  bottom: 15px;
+  right: -500px;
+  z-index: 999;
+  border-radius: 5px 0 0 5px;
+  background-color: #ffffff;
+  border: 1px solid #00c4c4;
+  border-right: none;
+  transition: right 0.3s, width 0.3s;
+}
+.problem-tip-log .problem-tip-box {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.problem-tip-log .problem-tip-box .problem-tip-left-box {
+  height: 100%;
+  width: 150px;
+  left: -150;
+  transition: width 0.3s;
+  overflow: hidden;
+  position: relative;
+}
+.problem-tip-log .problem-tip-box .problem-tip-left-box ul {
+  width: 150px;
+  right: 0;
+  position: absolute;
+  transition: left 0.3s;
+  list-style: none;
+}
+.problem-tip-log .problem-tip-box .problem-tip-left-box ul li {
+  padding: 5px 10px;
+  user-select: none;
+  cursor: pointer;
+  line-height: 20px;
+  color: #00c4c4;
+  font-size: 16px;
+  position: relative;
+}
+.problem-tip-log .problem-tip-box .problem-tip-left-box ul li::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 5px;
+  right: 5px;
+  height: 1px;
+  background-color: #00c4c4;
+}
+.problem-tip-log .problem-tip-box .problem-tip-left-box ul li.active {
+  user-select: none;
+  cursor: pointer;
+  line-height: 20px;
+  color: #fff;
+  background-color: #00c4c4;
+  position: relative;
+}
+.problem-tip-log .problem-tip-box .problem-tip-left-box ul li.active::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 5px;
+  right: 5px;
+  height: 1px;
+  background-color: #00c4c4;
+}
+.problem-tip-log .problem-tip-box .problem-tip-right-box {
+  flex: 1;
+  background-color: red;
+  width: 100%;
+  height: 100%;
+}
+.problem-tip-log .problem-tip-box .problem-tip-right-box textarea {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: 0;
+  resize: none;
+  padding: 15px;
+  border-left: 1px dotted #00c4c4;
+}
+.problem-tip-log .left-tip {
+  width: 55px;
+  height: 50px;
+  position: absolute;
+  left: -55px;
+  top: 45px;
+  padding: 0 10px;
+  color: #ffffff;
+  background-color: #00c4c4;
+  border-radius: 5px 0 0 5px;
+  user-select: none;
+  cursor: pointer;
+}
+.problem-tip-log .left-problem-date-tip {
+  top: 100px;
+}
+.problem-tip-log .left-problem-big-tip {
+  top: 155px;
+}
+.problem-tip-log .left-problem-doc-setting-tip {
+  top: 210px;
+}

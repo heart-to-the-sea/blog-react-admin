@@ -1,0 +1,85 @@
+.terminal-index-bkg {
+  width: 100%;
+  height: 500px;
+  background-image: url("../../../../public/bkg3.jpg");
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  background-size: 100%;
+  background-position: center center;
+  filter: grayscale(1);
+}
+.terminal-index-content {
+  padding-top: 20px;
+  width: 1200px;
+  height: 500px;
+  margin: auto;
+  text-align: center;
+  z-index: 1;
+}
+.terminal-index-content .terminal-index-box {
+  display: flex;
+  justify-content: space-around;
+}
+.terminal-index-content .terminal-index-box .terminal-index-box-left {
+  width: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 80px;
+  margin-left: 100px;
+  align-items: center;
+}
+.terminal-index-content .terminal-index-box .terminal-index-box-left .terminal-name {
+  cursor: pointer;
+  user-select: none;
+}
+.terminal-index-content .terminal-index-box .terminal-index-box-right {
+  padding-top: 120px;
+}
+.terminal-index-content img {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.terminal-list {
+  width: 100%;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+}
+.terminal-list .terminal-list-node {
+  max-width: 500px;
+  min-height: 20px;
+  max-height: 60px;
+  border: 1px solid transparent;
+  padding: 3px;
+}
+.terminal-list .terminal-list-node:hover {
+  border: 1px dashed #6af817;
+  cursor: pointer;
+}
+.terminal-list .terminal-list-node .terminal-list-title {
+  width: 480px;
+  position: relative;
+  min-height: 20px;
+  max-height: 60px;
+  padding-left: 80px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.terminal-list .terminal-list-node .terminal-list-title .terminal-list-title-mark {
+  color: red;
+}
+.terminal-list .terminal-list-node .terminal-list-title .left-index {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+}
